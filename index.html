@@ -260,7 +260,7 @@
         <div class="logo">
             <img src="https://cdn-icons-png.flaticon.com/512/5345/5345946.png" alt="Astronaut">
         </div>
-        <h1> Yaa silakan masukan PW nya disini👀!!</h1>
+        <h1>Yaa silakan masukan PW nya disini👀!!</h1>
         
         <div class="wifi-signal">
             <div class="wifi"></div>
@@ -302,7 +302,7 @@
             const password = document.getElementById('password').value;
             const status = document.getElementById('status');
             
-            if (password === "caryz48") {
+            if (password === "caryz1") {
                 status.textContent = "Accesss Benarr Whatttt...🤗🙏🏻";
                 status.style.color = "#4dff88";
                 
@@ -311,10 +311,23 @@
                 
                 // Redirect after delay
                 setTimeout(() => {
-                    window.location.href = "https://v-online.id/a33c4f07"; // Ganti dengan URL tujuan Anda
+                    window.location.href = "https://v-online.id/a33c4f07"; // URL untuk password caryz48
                 }, 1500);
-            } else {
-                status.textContent = " password Salahh nyett gak usah masuk tanpa izinn..🐱🖕🏻";
+            } 
+            else if (password === "caryz") {
+                status.textContent = "Access Granted! Redirecting...";
+                status.style.color = "#4dff88";
+                
+                // Add success animation
+                document.querySelector('.login-container').style.animation = "pulse 0.5s";
+                
+                // Redirect to different URL for caryz password
+                setTimeout(() => {
+                    window.location.href = "https://example.com/alternative-page"; // URL untuk password caryz
+                }, 1500);
+            }
+            else {
+                status.textContent = "password Salahh nyett gak usah masuk tanpa izinn..🐱🖕🏻";
                 status.style.color = "#ff4d4d";
                 
                 // Add shake animation
